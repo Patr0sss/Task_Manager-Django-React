@@ -1,0 +1,217 @@
+.toDoBar {
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  color: white;
+  font-weight: bold;
+  width: 80%;
+  border-radius: 5px;
+}
+
+.index {
+  width: 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 2px solid white;
+  font-size: 30px;
+}
+
+.title {
+  width: calc(66% - 88px);
+  font-size: 24px;
+  margin-left: 20px;
+  text-wrap: nowrap;
+  overflow: auto;
+}
+
+.status {
+  width: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 1px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 60%;
+  background-color: royalblue;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.details:hover {
+  background-color: rgb(71, 115, 235);
+  opacity: 0.5;
+}
+
+.delete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  width: 50px;
+  height: 80%;
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+}
+
+.delete:hover {
+  background-color: red;
+  border-radius: 5px;
+}
+
+.toDoBarDeatilsBackGround {
+  position: absolute;
+  background-color: gray;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toDoBarDeatilsTable {
+  width: 700px;
+  height: 500px;
+  border-radius: 5px;
+  background-color: #222222;
+  border: 2px solid black;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.deatilsTopBar {
+  /* background-color: red; */
+  width: 96%;
+  margin-inline: 2%;
+  font-weight: bold;
+  border-bottom: 1px solid white;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 26px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.toDoBarDetailsCenter {
+  width: 90%;
+  height: calc(100% - 50px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contentContainer {
+  /* background-color: blue; */
+  height: 250px;
+  width: 90%;
+  margin-top: 20px;
+  font-weight: bold;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #525252;
+  font-size: 20px;
+}
+
+.editButton {
+  margin-top: 55px;
+  margin-bottom: 30px;
+  background-color: green;
+  font-weight: bold;
+  width: 40%;
+  height: 40px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.editButton:hover {
+  opacity: 0.6;
+}
+
+.textAreaEditConent {
+  height: 250px;
+  width: 90%;
+  resize: none;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid white;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+.textAreaEditConent:focus {
+  outline: none;
+  border: 2px solid green;
+}
+
+.editConentButtons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 40%;
+}
+
+.editConentSubmitButton {
+  width: 40%;
+  padding: 5px;
+  background-color: green;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.editConentSubmitButton:hover {
+  opacity: 0.6;
+}
+
+.editConentCancelButton {
+  width: 40%;
+  padding: 5px;
+  background-color: red;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.editConentCancelButton:hover {
+  opacity: 0.6;
+}
