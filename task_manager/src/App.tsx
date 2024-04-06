@@ -67,8 +67,6 @@ function App() {
 
   const handleCompletedChange = async (id: number, completed: boolean) => {
     try {
-      // Wywołaj odpowiednie zapytanie do API, aby zaktualizować wartość completed w bazie danych
-      // Po zakończeniu zapytania, możesz zaktualizować stan lub wykonać inne działania w zależności od potrzeb
       await axios.patch(`http://127.0.0.1:8000/api/todo/${id}/`, { completed });
       console.log(id + " KOMPLETED : " + completed);
     } catch (error) {
@@ -78,8 +76,6 @@ function App() {
 
   const handleDescriptionChange = async (id: number, content: string) => {
     try {
-      // Wywołaj odpowiednie zapytanie do API, aby zaktualizować wartość description w bazie danych
-      // Po zakończeniu zapytania, możesz zaktualizować stan lub wykonać inne działania w zależności od potrzeb
       await axios.patch(`http://127.0.0.1:8000/api/todo/${id}/`, { content });
       console.log(id + " Content : " + content);
     } catch (error) {
@@ -114,7 +110,7 @@ function App() {
             title={todo.body}
             completed={todo.completed}
             onDelete={handleDelete}
-            content=""
+            content={todo.content}
             onCompletedChange={handleCompletedChange}
             onDescriptionChange={handleDescriptionChange}
           />

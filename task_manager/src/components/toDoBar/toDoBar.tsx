@@ -86,7 +86,7 @@ export default function ToDoBar({
 
             <div className={styles.toDoBarDetailsCenter}>
               <div className={styles.contentContainer}>
-                {taskDescription.length === 0
+                {taskDescription === ""
                   ? "Task Description ..."
                   : taskDescription}
               </div>
